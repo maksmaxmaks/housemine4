@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>ХаусМайн 4</title>
+  <meta name="viewport" content="width=1280">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https: http:; style-src 'self' 'unsafe-inline'; script-src 'self'; font-src 'self'">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="stage">
+  <div id="bg"></div>
+  <div id="vignette"></div>
+
+  <header id="titlebar">
+    <span id="ver"></span>
+    <span class="grow"></span>
+    <button class="wbtn" id="w-min" title="Свернуть">&#8211;</button>
+    <button class="wbtn" id="w-close" title="Закрыть">&#10005;</button>
+  </header>
+
+  <button id="pill" title="Статус сервера"><i class="dot"></i><span id="pill-text">…</span></button>
+  <div id="banners"></div>
+
+  <aside id="buddy" class="panel">
+    <div class="p-title" id="buddy-name">Гость</div>
+    <div class="buddy-stage">
+      <div class="shadow"></div>
+      <canvas id="buddy-canvas"></canvas>
+    </div>
+    <div class="acc-row">
+      <span class="badge" id="acc-badge">—</span>
+      <button class="pbtn sm" id="acc-change">Сменить</button>
+    </div>
+  </aside>
+
+  <main id="center">
+    <div id="subtitle"></div>
+    <button class="b b-wide play" id="btn-play" style="--h:66px">
+      <span class="fill" id="play-fill"></span>
+      <span class="lbl" id="play-label">НАЧАТЬ ИГРУ</span>
+    </button>
+    <button class="b b-wide" id="btn-mods" style="--h:54px"><span class="lbl">МОДЫ</span></button>
+    <div class="row">
+      <button class="b b-small" id="btn-settings" style="--h:52px"><span class="lbl">НАСТРОЙКИ</span></button>
+      <button class="b b-small" id="btn-exit" style="--h:52px"><span class="lbl">ВЫХОД</span></button>
+    </div>
+    <div class="icons">
+      <button class="ib" data-act="site"    data-tip="Сайт"><img src="assets/icon-globe.png" alt=""></button>
+      <button class="ib" data-act="logs"    data-tip="Журнал игры"><img src="assets/icon-monitor.png" alt=""></button>
+      <button class="ib" data-act="account" data-tip="Аккаунт"><img src="assets/icon-people.png" alt=""></button>
+      <button class="ib" data-act="server"  data-tip="Статус сервера"><img src="assets/icon-bars.png" alt=""></button>
+      <button class="ib" data-act="discord" data-tip="Discord"><img src="assets/icon-discord.png" alt=""></button>
+      <button class="ib" data-act="help"    data-tip="Помощь"><img src="assets/icon-help.png" alt=""></button>
+    </div>
+  </main>
+
+  <aside id="news" class="panel">
+    <div class="p-title">Новости <span id="news-badge" class="nbadge" hidden></span></div>
+    <div id="news-list"></div>
+  </aside>
+
+  <div id="modal-root"></div>
+  <div id="toast"></div>
+</div>
+<script src="default-skin.js"></script>
+<script src="buddy.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

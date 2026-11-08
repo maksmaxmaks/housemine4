@@ -1,0 +1,32 @@
+{
+  "name": "hausmine-launcher",
+  "productName": "HausMine 4",
+  "version": "1.0.0",
+  "description": "Лаунчер сборки и сервера ХаусМайн 4",
+  "main": "src/main/main.js",
+  "scripts": {
+    "postinstall": "node tools/copy-assets.js",
+    "start": "electron .",
+    "pack": "node tools/pack.js",
+    "news": "node tools/news.js",
+    "serve": "node tools/serve.js",
+    "test": "node --test test/core.test.js test/main.smoke.test.js",
+    "dist": "electron-builder --win nsis portable --publish never"
+  },
+  "author": "ХаусМайн",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@fontsource/pixelify-sans": "^5.0.0",
+    "electron": "^37.0.0",
+    "electron-builder": "^26.0.0"
+  },
+  "build": {
+    "appId": "ru.hausmine.launcher",
+    "productName": "HausMine 4",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["src/**/*", "!src/renderer/dev-bridge.js", "launcher.config.json", "package.json"],
+    "win": { "target": ["nsis", "portable"], "icon": "build/icon.png" },
+    "nsis": { "oneClick": true, "perMachine": false, "shortcutName": "ХаусМайн 4" },
+    "portable": { "artifactName": "HausMine4-portable.exe" }
+  }
+}

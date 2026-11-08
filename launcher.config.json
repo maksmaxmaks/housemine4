@@ -1,0 +1,12 @@
+{
+  "packName": "ХаусМайн 4",
+  "baseUrl": "https://ВАШ-САЙТ.example/hausmine4/",
+  "server": { "name": "ХаусМайн 4", "address": "play.example.com", "port": 25565 },
+  "links": { "site": "https://example.com", "discord": "https://discord.gg/your-invite", "help": "" },
+  "skins": { "template": "", "fallback": "mojang" },
+  "pollMinutes": 5,
+  "defaultRamMb": 4096,
+  "microsoftLogin": true,
+  "msClientId": "00000000402b5328",
+  "gameFolderName": ".hausmine4"
+}

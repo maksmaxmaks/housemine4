@@ -1,0 +1,20 @@
+{
+  "name": "ХаусМайн 4",
+  "version": "1.0.0",
+  "minecraft": "1.20.1",
+  "loader": { "type": "fabric", "version": "latest" },
+  "required": true,
+  "changelog": ["Первая версия сборки ХаусМайн 4"],
+
+  "server": { "name": "ХаусМайн 4", "address": "play.example.com", "port": 25565 },
+  "links": { "site": "https://example.com", "discord": "https://discord.gg/your-invite", "help": "https://example.com/help" },
+  "skins": { "template": "", "fallback": "mojang" },
+
+  "optional": ["mods/*optifine*", "mods/*sodium*", "resourcepacks/*", "shaderpacks/*"],
+  "once": ["options.txt", "servers.dat"],
+  "names": {},
+  "ignore": [],
+
+  "announcement": { "id": "", "text": "", "level": "info" },
+  "launcher": { "version": "", "url": "" }
+}
