@@ -1,6 +1,6 @@
 {
   "packName": "ХаусМайн 4",
-  "baseUrl": "https://ВАШ-САЙТ.example/hausmine4/",
+  "baseUrl": "https://maksmaxmaks.github.io/housemineupdates/",
   "server": { "name": "ХаусМайн 4", "address": "play.example.com", "port": 25565 },
   "links": { "site": "https://example.com", "discord": "https://discord.gg/your-invite", "help": "" },
   "skins": { "template": "", "fallback": "mojang" },
